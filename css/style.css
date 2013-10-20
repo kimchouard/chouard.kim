@@ -28,7 +28,7 @@ svg { fill: #1B1B1B; }
 #resume { padding: 0 20px; }
 #linkedin { padding-left: 20px; }
 .item img, .item svg { float: left; }
-.on, #details, #wrapPorto { display: none; }
+.on, #wrapPorto { display: none; }
 
 /* Citation en haut à gauche */
 #wrapCitation { height: 144px; width: 290px; position: absolute; top: 0; left: -290px; z-index: 100; overflow: hidden; }
