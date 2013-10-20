@@ -168,7 +168,6 @@ $(function() {
 	
 	
 	//Préparation de la scène
-	$('#js').fadeOut();
 	$('#main').animate({right: 0, bottom: 0}, 600);
 	$('#wrapTexte').css({left: $(window).width()/2, top: $(window).height()/2, height: 0, width: 0});
 	$('body').css({height: $(window).height()});
