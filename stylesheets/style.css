@@ -1,0 +1,356 @@
+/* line 12, sass/style.scss */
+body {
+  background: url("../img/bg.jpg");
+  font-family: 'Cantarell', sans-serif;
+  font-variation: small-caps;
+  color: #1B1B1B;
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 14, sass/style.scss */
+#wrapTexte {
+  position: absolute;
+  top: -100px;
+  left: 200px;
+  z-index: 10;
+  height: 0;
+  width: 0;
+  padding: 0;
+  border: 14px solid #1B1B1B;
+  overflow: hidden;
+}
+
+/* line 15, sass/style.scss */
+#main {
+  width: 700px;
+  height: 312px;
+  position: relative;
+  right: 350px;
+  bottom: 156px;
+}
+
+/* line 22, sass/style.scss */
+h1, h2, h3 {
+  font-weight: normal;
+}
+
+/* line 23, sass/style.scss */
+h1, h2 {
+  text-align: center;
+  margin: 0;
+}
+
+/* line 24, sass/style.scss */
+h1 {
+  font-size: 95px;
+}
+
+/* line 25, sass/style.scss */
+h2 {
+  font-size: 50px;
+  border-bottom: 3px solid #1B1B1B;
+  border-top: 3px solid #1B1B1B;
+  position: relative;
+  top: -15px;
+}
+
+/* line 26, sass/style.scss */
+h3 {
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  font-style: italic;
+}
+
+/* line 27, sass/style.scss */
+.center {
+  text-align: center;
+}
+
+/* line 28, sass/style.scss */
+a {
+  text-decoration: none;
+  color: #1B1B1B;
+}
+
+/* line 29, sass/style.scss */
+a:hover {
+  color: #5E5E5E;
+}
+
+/* line 30, sass/style.scss */
+svg {
+  fill: #1B1B1B;
+}
+
+/* line 37, sass/style.scss */
+.leftCol, .rightCol {
+  width: 250px;
+  overflow: hidden;
+}
+
+/* line 38, sass/style.scss */
+.leftCol {
+  float: left;
+  text-align: left;
+}
+
+/* line 39, sass/style.scss */
+.rightCol {
+  float: right;
+  text-align: right;
+}
+
+/* line 46, sass/style.scss */
+#wrapContact {
+  height: 80px;
+  border-bottom: 3px solid #1B1B1B;
+}
+
+/* line 47, sass/style.scss */
+#contact {
+  height: 80px;
+  width: 650px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* line 48, sass/style.scss */
+.item {
+  display: block;
+  height: 80px;
+  padding: 0 25px;
+  position: relative;
+  top: 50px;
+  float: left;
+}
+
+/* line 49, sass/style.scss */
+.item img {
+  width: 45px;
+}
+
+/* line 50, sass/style.scss */
+#resume {
+  padding: 0 20px;
+}
+
+/* line 51, sass/style.scss */
+#linkedin {
+  padding-left: 20px;
+}
+
+/* line 52, sass/style.scss */
+.item img, .item svg {
+  float: left;
+}
+
+/* line 53, sass/style.scss */
+.on, #wrapPorto {
+  display: none;
+}
+
+/* line 60, sass/style.scss */
+#wrapCitation {
+  height: 144px;
+  width: 290px;
+  position: absolute;
+  top: 0;
+  left: -290px;
+  z-index: 100;
+  overflow: hidden;
+}
+
+/* line 61, sass/style.scss */
+#citation {
+  background: url("../img/bulle.png") top left no-repeat;
+  padding: 0 0 0 5px;
+  height: 144px;
+  width: 290px;
+  position: absolute;
+  top: 0;
+  left: 290px;
+  z-index: 10;
+}
+
+/* line 62, sass/style.scss */
+#pli {
+  background: url("../img/pli.png") top left no-repeat;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 100px;
+  left: -100px;
+  z-index: 100;
+}
+
+/* line 69, sass/style.scss */
+.wrapBulle {
+  overflow: hidden;
+  float: left;
+  border: 10px #1b1b1b solid;
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  position: relative;
+  top: 98px;
+  cursor: pointer;
+}
+
+/* line 70, sass/style.scss */
+.wrapBulle h3 {
+  display: none;
+  font-style: normal;
+  font-weight: bold;
+  margin-top: 66px;
+  position: relative;
+  font-size: 24px;
+}
+
+/* line 71, sass/style.scss */
+.wrapBulle svg {
+  display: none;
+  position: relative;
+  margin-left: 15px;
+  width: 120px;
+  height: 120px;
+}
+
+/* line 72, sass/style.scss */
+#websites {
+  left: 272px;
+}
+
+/* line 73, sass/style.scss */
+#visuals {
+  left: 101px;
+}
+
+/* line 74, sass/style.scss */
+#movies {
+  left: -69px;
+}
+
+/* line 75, sass/style.scss */
+#wrapWebsites, #wrapVisuals, #wrapMovies {
+  display: none;
+  position: relative;
+}
+
+/* line 82, sass/style.scss */
+#wrapWebsites .wrapThumbnail {
+  width: 700px;
+  overflow: auto;
+  padding: 0;
+}
+
+/* line 83, sass/style.scss */
+#wrapWebsites .thumbnail {
+  height: 180px;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 84, sass/style.scss */
+#wrapWebsites .thumbnail a {
+  overflow: hidden;
+  display: block;
+  width: 110px;
+  height: 110px;
+  margin: 10px 60px 0;
+  float: left;
+}
+
+/* line 85, sass/style.scss */
+.first {
+  margin-left: 0;
+}
+
+/* line 86, sass/style.scss */
+#wrapWebsites .thumbnail a .NB {
+  border: 5px solid #1B1B1B;
+  float: left;
+}
+
+/* line 87, sass/style.scss */
+#wrapWebsites .thumbnail a .color {
+  display: none;
+  position: relative;
+  bottom: 105px;
+  left: 5px;
+  float: left;
+}
+
+/* line 88, sass/style.scss */
+#wrapWebsites .thumbnail .times {
+  margin: 0px 0 0 30px;
+  float: left;
+  height: 5px;
+  position: relative;
+  z-index: 50;
+}
+
+/* line 89, sass/style.scss */
+#wrapWebsites .thumbnail .times .time {
+  height: 30px;
+  float: left;
+  position: relative;
+  width: 36px;
+  text-align: center;
+  margin: 0;
+}
+
+/* line 90, sass/style.scss */
+#wrapWebsites .thumbnail .times .time .pointer {
+  width: 0;
+  height: 0;
+  border-top: 8px solid #1B1B1B;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  margin-left: 13px;
+}
+
+/* line 91, sass/style.scss */
+#wrapWebsites .thumbnail .times .dot {
+  border: 2px #e0e0e0 solid;
+  background: #1B1B1B;
+  width: 7px;
+  height: 7px;
+  border-radius: 7px;
+  margin-left: 13px;
+}
+
+/* line 92, sass/style.scss */
+#wrapWebsites .thumbnail .timeline {
+  margin: 6px 0 0 30px;
+  border-bottom: 5px solid #1B1B1B;
+  float: left;
+  position: relative;
+  z-index: 20;
+  height: 0;
+}
+
+/* line 93, sass/style.scss */
+#wrapWebsites .thumbnail .timeline .fleche {
+  float: left;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  position: relative;
+  bottom: 7px;
+  right: 9px;
+}
+
+/* line 94, sass/style.scss */
+#wrapWebsites .thumbnail .timeline .fleche .triangle {
+  float: right;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-right: 5px solid #1B1B1B;
+  border-top: 2.5px solid transparent;
+  border-bottom: 2.5px solid transparent;
+}

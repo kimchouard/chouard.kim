@@ -1,10 +1,24 @@
+
+//-----------------------------------------------
+//								Variables
+//-----------------------------------------------
+
+
+
+//-----------------------------------------------
+//						Contenu principal
+//-----------------------------------------------
+
 body { background: url('../img/bg.jpg'); font-family: 'Cantarell', sans-serif; font-variation: small-caps; color: #1B1B1B; position:relative; overflow: hidden; padding: 0; margin: 0; }
 
-/* Contenu principal */
 #wrapTexte { position: absolute; top: -100px; left: 200px; z-index: 10; height: 0; width: 0; padding: 0; border: 14px solid #1B1B1B; overflow: hidden; }
 #main { width: 700px; height: 312px; position: relative; right: 350px; bottom: 156px; }
 
-/* Style généraux */
+
+//-----------------------------------------------
+//						Style gÃ©nÃ©raux
+//-----------------------------------------------
+
 h1, h2, h3 { font-weight: normal; }
 h1, h2 { text-align: center; margin: 0; }
 h1 { font-size: 95px; }
@@ -15,12 +29,20 @@ a { text-decoration: none; color: #1B1B1B; }
 a:hover { color: #5E5E5E; }
 svg { fill: #1B1B1B; }
 
-/* Pour les différentes langues */
+
+//-----------------------------------------------
+//			Pour les diffÃ©rentes langues
+//-----------------------------------------------
+
 .leftCol, .rightCol { width: 250px; overflow: hidden; }
 .leftCol { float: left; text-align: left;}
 .rightCol { float: right; text-align: right; }
 
-/* Contact */
+
+//-----------------------------------------------
+//							Contact
+//-----------------------------------------------
+
 #wrapContact { height: 80px; border-bottom: 3px solid #1B1B1B; }
 #contact { height: 80px; width: 650px; margin: 0 auto; overflow: hidden; }
 .item { display: block; height: 80px; padding: 0 25px; position: relative; top: 50px; float: left; }
@@ -30,15 +52,20 @@ svg { fill: #1B1B1B; }
 .item img, .item svg { float: left; }
 .on, #wrapPorto { display: none; }
 
-/* Citation en haut à gauche */
+
+//-----------------------------------------------
+//			Citation en haut Ã  gauche
+//-----------------------------------------------
+
 #wrapCitation { height: 144px; width: 290px; position: absolute; top: 0; left: -290px; z-index: 100; overflow: hidden; }
 #citation { background: url('../img/bulle.png') top left no-repeat; padding: 0 0 0 5px; height: 144px; width: 290px; position: absolute; top: 0; left: 290px; z-index: 10; }
 #pli { background: url('../img/pli.png') top left no-repeat; height: 100px; width: 100px; position: absolute; top: 100px; left: -100px; z-index: 100;}
 
-/* En cas de javascript non activé */
-#js { text-align: center; margin-top: 30px; }
 
-/* Portofolio Menu */
+//-----------------------------------------------
+//					Portofolio Menu
+//-----------------------------------------------
+
 .wrapBulle { overflow: hidden; float: left; border: 10px #1b1b1b solid; width: 150px; height: 150px; border-radius: 150px; position: relative; top: 98px; cursor: pointer; }
 .wrapBulle h3 { display: none; font-style: normal; font-weight: bold; margin-top: 66px; position: relative; font-size: 24px; }
 .wrapBulle svg { display: none; position: relative; margin-left: 15px; width: 120px; height: 120px; }
@@ -47,7 +74,11 @@ svg { fill: #1B1B1B; }
 #movies { left: -69px; }
 #wrapWebsites, #wrapVisuals, #wrapMovies { display: none; position: relative; }
 
-/* Portofolio Menu */
+
+//-----------------------------------------------
+//						Portofolio Menu
+//-----------------------------------------------
+
 #wrapWebsites .wrapThumbnail { width: 700px; overflow: auto; padding: 0; }
 #wrapWebsites .thumbnail { height: 180px; position: relative; padding: 0; margin: 0; }
 #wrapWebsites .thumbnail a { overflow: hidden; display: block; width: 110px; height: 110px;  margin: 10px 60px 0; float: left; }
