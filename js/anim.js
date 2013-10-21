@@ -160,7 +160,7 @@ function  lunchPorto() {
 };
 
 //constantes initiales
-var ratio = 1.05;
+var ratio = 0.90;
 var speed = 0.8;
 var hover = false;
 
