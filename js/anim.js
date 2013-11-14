@@ -12,10 +12,10 @@ function ouvrirBulle(ratioB, timing, speed, fonctionFin) {
 	//Bord rond
 	$('#wrapTexte').css({'border-radius': taille});
 	
-	//calcul du padding : base + différence cercle-cercle /2
+	//calcul du padding : base + diffÃ©rence cercle-cercle /2
 	var padding = (taille*1.5-$('#main').width())/2;
 	
-	//Animation d'entrée
+	//Animation d'entrÃ©e
 	$('#wrapTexte').stop().animate({width: $('#main').width(), height: taille, 'padding-top': (taille)/2, 'padding-left': padding, 'padding-right': padding, top: ($(window).height()-(taille*1.5))/2, left: ($(window).width()-(taille*1.5))/2}, timing, function() {
 		//Affichage de la citation
 		if (fonctionFin) {
@@ -33,13 +33,10 @@ function ouvrirBulle(ratioB, timing, speed, fonctionFin) {
 
 function animerIcones(top, bottom) {
 	if (hover == false) {
-		$('#portofolio').animate({top: top+'px'}, 300).animate({top: bottom+'px'}, 300);
-		$('#mail').delay(50).animate({top: top+'px'}, 300).animate({top: bottom+'px'}, 300);
-		$('#resume').delay(100).animate({top: top+'px'}, 300).animate({top: bottom+'px'}, 300);
-		$('#linkedin').delay(150).animate({top: top+'px'}, 300).animate({top: bottom+'px'}, 300);
-		$('#twitter').delay(200).animate({top: top+'px'}, 300).animate({top: bottom+'px'}, 300);
-		$('#github').delay(250).animate({top: top+'px'}, 300).animate({top: bottom+'px'}, 300);
-		$('#pinterest').delay(300).animate({top: top+'px'}, 300).animate({top: bottom+'px'}, 300);
+        $("#contact a").each(function(index) {
+            console.info(index);
+            $($("#contact a")[index]).delay(index*50).animate({top: top+'px'}, 300).animate({top: bottom+'px'}, 300);
+        });
 	};
 };
 
@@ -60,7 +57,7 @@ function animBulle(id) {
 };
 
 function scrollThumbnails(div) {
-	//Adapte la largeur de thumbnail pour que toutes créactions apparaissent
+	//Adapte la largeur de thumbnail pour que toutes crÃ©actions apparaissent
 	nbLiens = $('#wrap'+div+' .thumbnail a').get().length;		
 	$('#wrap'+div+' .thumbnail').css({width: nbLiens*230}); //premier lien + autres liens
 	$('#wrap'+div+' .thumbnail .timeline').css({width: $('#wrap'+div+' .thumbnail').width()-75});
@@ -167,7 +164,7 @@ var hover = false;
 $(function() {
 	
 	
-	//Préparation de la scène
+	//PrÃ©paration de la scÃ¨ne
 	$('#main').animate({right: 0, bottom: 0}, 600);
 	$('#wrapTexte').css({left: $(window).width()/2, top: $(window).height()/2, height: 0, width: 0});
 	$('body').css({height: $(window).height()});
@@ -175,7 +172,7 @@ $(function() {
 	//Lancement de l'animation
 	ouvrirBulle(ratio, 600, speed, true);
 	
-	//Adaptation lorsqu'on redimenssione la fenètre
+	//Adaptation lorsqu'on redimenssione la fenÃ¨tre
 	$(window).resize(function() { ouvrirBulle(ratio, 600, speed, false); });
 	
 	//Au survol des icones.
