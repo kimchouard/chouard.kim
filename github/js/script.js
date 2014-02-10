@@ -161,6 +161,26 @@ app.filter('niceNum', function() {
     }
 });
 
+app.filter('unitNum', function() {
+	return function(num) {
+        if (num > 1000000000) {
+         return (Math.round(num / 10000000) / 100) + " tera"
+        }
+        else if (num > 1000000) {
+         return (Math.round(num / 10000) / 100) + " giga"
+        }
+        else if (num > 1000) {
+         return (Math.round(num / 10) / 100)  + " mega"
+        }
+        else if (num > 0) {
+          return "kilo";
+        }
+        else {
+          return "";
+        }
+    };
+});
+
 app.filter('shortenStr', function() {
 	return function (string) {
         maxChar = 120;
@@ -220,7 +240,7 @@ app.factory("FeaturedHeader", function($resource) {
 });
 
 //TODO : Manage offline project list when errors
-this.GitHubCtrl = function($scope, $filter, DatasAdobe, FeaturedHeader) {
+this.GitHubCtrl = function($scope, $sce, $filter, DatasAdobe, FeaturedHeader) {
     
     //------------------------------- Init --------------------------------
     
@@ -255,9 +275,10 @@ this.GitHubCtrl = function($scope, $filter, DatasAdobe, FeaturedHeader) {
 			for (var j = 0; j < actFeatured.length; j++) {
 				var actFeaturedItem = actFeatured[j];
 				
-				actFeaturedItem.textHeader = actFeaturedItem.textHeader.join("\n");
+				actFeaturedItem.textHeader = $sce.trustAsHtml(actFeaturedItem.textHeader.join("\n"));
 			};
 		};
+        console.log($scope.featureds);
     });
     
     $scope.changeIndexFeatured = function(i, delta) {
@@ -280,8 +301,7 @@ this.GitHubCtrl = function($scope, $filter, DatasAdobe, FeaturedHeader) {
 	$scope.orgs = [];
 	
 	//Reference Orgs
-	DatasAdobe.query(function(rep) { 
-		console.log(rep);
+	DatasAdobe.query(function(rep) {
 		if (rep[0]) {
 			$scope.projects = rep[0].repos;
 			$scope.orgs = rep[0].orgs;
@@ -335,9 +355,7 @@ this.GitHubCtrl = function($scope, $filter, DatasAdobe, FeaturedHeader) {
         }).order(function(d) {
             return d.value;
         });
-        console.log(langsGroup, langChart);
         langChart.width(160).height(160).radius(80).dimension(langsDim).group(langsGroup).title(function(d) {
-            console.info(d);
             return d.data.key;
         }).label(function(d) {
             return d.data.key;
@@ -451,11 +469,13 @@ var scrollUpdate = function () {
 	
 	// ----------------------------------------------------------------------------
 	//					Show More/Less button
-	var endOfProjects = scrollTop + $(window).height() - $('.top').height() - $('.header').height();
-	if (endOfProjects < 130 ) {
-		$(".buttonMore").css({position: 'fixed', bottom: 0});
+	var bottomScreem = scrollTop + $(window).height();
+	if ( (bottomScreem > $("#featuredOrg").offset().top + 25 )
+      || ($scope.projLast == 10) )
+    {
+		$(".buttonMore").css({position: 'absolute', bottom: -50});
 	}
 	else {
-		$(".buttonMore").css({position: 'absolute', bottom: -50});
+		$(".buttonMore").css({position: 'fixed', bottom: 0});
 	}
 }
