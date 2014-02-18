@@ -84,8 +84,39 @@ form.custom .custom.dropdown.open.medium ul {
     min-width: 100%;
 }
 
+.old {
+    display: none;
+    
+    .punchline {
+        margin: 100px auto 0; width: 600px;
+    }
+
+    .links {
+        margin: 30px auto 0;
+        width: 600px;
+    
+        .item {
+            display: block;
+            margin: 0 20px;
+        
+            &, img, p {
+                float: left;
+            }
+
+            p {
+                width: 80px;
+                margin: 40px 10px 0;
+            }
+            
+            img {
+                width: 160px;
+            }
+        }
+    }
+}
+
 //---------------------------------------------------------------------------------
-//                          Headers
+//                          Stats
 //---------------------------------------------------------------------------------
 
 .intro {
@@ -109,6 +140,17 @@ form.custom .custom.dropdown.open.medium ul {
         margin-top: 15px;
     
         svg {
+            .row {
+                rect {
+                    @include transform(translate(90px, 0));
+                }
+
+                text {
+                    @include transform(translate(70px, 0));
+                    text-anchor: end;
+                }
+            }
+
             .axis {
                 display: none;
             }
@@ -130,6 +172,17 @@ form.custom .custom.dropdown.open.medium ul {
 //---------------------------------------------------------------------------------
 
 .header_inline {
+    
+    &.mobile {
+        .logo.first {
+            top: 10px;
+        }
+        
+        .logo.second {
+           top: 10px;
+        }
+    }
+
 	.logo.first {
 		top: -180px;
 	}
@@ -410,6 +463,48 @@ form.custom .custom.dropdown.open.medium ul {
     .topProject {
         position: relative;
         z-index: 50;
+    
+        &>div { position: relative; }
+
+        .popup {
+            position: absolute;
+            right: 30px;
+            top: -70px;
+            background: $primary-color;
+            border: solid 1px darken($primary-color, 10);
+            color: white;
+            padding: 20px 30px;
+            width: 200px;
+            text-align: center;
+            font-size: 0.875em;
+    
+            .close {
+                display: block;
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                padding: 6px;
+                color: #eee;
+                font-weight: bold;
+                font-size: 13px;
+                
+                &:hover {
+                    color: #fff;
+                }
+            }
+    
+            &:after {
+                content: ' ';
+                position: absolute;
+                right: 9px;
+                bottom: -12px;
+                width: 0;
+                height: 0;
+                border-top: 12px solid $primary-color;
+                border-left: 8px solid transparent;
+                border-right: 8px solid transparent;
+            }
+        }
     
         h2, form {
             margin-bottom: 0;

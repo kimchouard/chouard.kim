@@ -1,3 +1,8 @@
+if (/MSIE [5-9]/.test(navigator.userAgent)) {
+    document.getElementById('old').style.display = 'block';
+    document.getElementById('supported').style.display = 'none';
+} else {
+
 /* ----------------------------------------------------------------------------
                 GitHup Ctrl
 ---------------------------------------------------------------------------- */
@@ -10,7 +15,7 @@ var app = angular.module("AdobeOpenSource", ["ngResource"]);
 
 //Get Adobe Github repos & orgs
 app.factory("DatasAdobe", function($resource) {
-    return $resource("http://ec2-54-221-78-73.compute-1.amazonaws.com");
+    return $resource("http://ec2-54-234-113-80.compute-1.amazonaws.com");
 });
 
 //Offline backup of json
@@ -34,7 +39,7 @@ this.GitHubCtrl = function($scope, $sce, $filter, DatasAdobe, DatasAdobeOffline,
 	$scope.filter = $filter;
 	$scope.filterStarIndex = 0;
 	$scope.indexFeatured = {
-		"org": 0,
+		"orgs": 0,
 		"projects": 0
 	};
 	$scope.searchLang = [];
@@ -140,7 +145,6 @@ this.GitHubCtrl = function($scope, $sce, $filter, DatasAdobe, DatasAdobeOffline,
         });
         
         $scope.updateGraph();
-        $scope.posLabel();
     
         //Loading over
         $scope.loading = false;
@@ -163,22 +167,13 @@ this.GitHubCtrl = function($scope, $sce, $filter, DatasAdobe, DatasAdobeOffline,
         }).order(function(d) {
             return d.value;
         });
-        langChart.width(220).height(180).dimension(langsDim).group(langsGroup).margins({top: 0, left: 80, right: 0, bottom: 20})
+        langChart.width(220).height(180).dimension(langsDim).group(langsGroup).margins({top: 0, left: 0, right: 0, bottom: 20})
  .title(function(d) {
             return d.key+ ' (' + Math.round((d.value / $scope.stats.nbLinesCode)*100) + '%)';
         }).label(function(d) {
             return d.key;
         }).renderLabel(true).colors(d3.scale.category20());
         dc.renderAll();
-    }
-    
-    $scope.posLabel = function() {
-        $('.dc-chart svg .row text').each(function(index) {
-            var actText = $('.dc-chart svg .row text')[index];
-            
-            var newX = - $(actText).attr('x') - $(actText).width();
-            $(actText).attr('x', newX);
-        });
     }
 	
 	$scope.showHideProj = function() {
@@ -225,6 +220,15 @@ this.GitHubCtrl = function($scope, $sce, $filter, DatasAdobe, DatasAdobeOffline,
         array.splice(i, 1);
     }
     
+    $scope.closeHelp = function() {
+        $scope.helped = true;
+    }
+    
+    $scope.toggleFiltersButton = function() {
+        $scope.closeHelp();
+        $scope.toggleFilters = !$scope.toggleFilters;
+    }
+    
     //--------------------------- Mobile & Parrallax -----------------------------
 	
 	$scope.mobile = isMobile(navigator.userAgent||navigator.vendor||window.opera);
@@ -232,6 +236,7 @@ this.GitHubCtrl = function($scope, $sce, $filter, DatasAdobe, DatasAdobeOffline,
 	
 	if ($scope.mobile) {
 		$(window).off("scroll", scrollUpdate);
+        $('.header_inline').addClass('mobile');
 	} else {
 		$(window).on("scroll", scrollUpdate);
 	}
@@ -579,3 +584,5 @@ app.filter('timeDiff', function() {
     return sDate;
   }
 });
+    
+}
