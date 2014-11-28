@@ -1,0 +1,46 @@
+.colortext {	color:rgb(87, 168, 62);}
+.colorbg {background:rgb(87, 168, 62);}
+a {	color:rgb(87, 168, 62);}
+::selection{background:rgb(87, 168, 62);}
+.navbar-nav>li.active>a,.navbar-nav>li.active>a:hover,.navbar-nav>li.active>a:focus {background-color:rgb(87, 168, 62);}
+.navbar-nav>li.active>a:before,.navbar-nav>li>a:hover:before,.navbar-nav>li>a:focus:before,.extra-nav-class a.dropdown-toggle:before {border-bottom:6px solid rgb(87, 168, 62);}
+.navbar-nav>li>a:hover,.navbar-nav>li>a:focus {	background-color:rgb(87, 168, 62);}
+.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus {background-color:rgb(87, 168, 62) !Important;}
+.extra-nav-class a.dropdown-toggle {	background-color:rgb(87, 168, 62) !Important;}
+.car-highlight1 {background-color:rgb(87, 168, 62);}
+.car-smallcircle {background:rgb(87, 168, 62);}
+.carouselText2 {	background:rgb(87, 168, 62);}
+.icon-box-top i:hover {background-color:#F85D62;}
+.fontawesome-icon.circle-white {	color:#F85D62}
+.grey-box-icon:hover .fontawesome-icon.circle-white,.grey-box-icon.active .fontawesome-icon.circle-white,.active i.fontawesome-icon {background-color:rgb(87, 168, 62);}
+.home-features .icon {background:rgb(87, 168, 62);}
+.copyright {	background-color:rgb(87, 168, 62);}
+.panel1 {border-left:6px solid rgb(87, 168, 62);}
+.buttoncolor {background:rgb(87, 168, 62);}
+.panel,.panel2 {	border-left:8px solid rgb(87, 168, 62);}
+.btn-default {background-color:rgb(87, 168, 62);}
+.btn-minimal:hover {	color: rgb(87, 168, 62);}
+#accordion div h4:before {	background:rgb(87, 168, 62) url('../img/plus.png') center center no-repeat;}
+#accordion div.active h4:before {background:rgb(87, 168, 62) url('../img/minus.png') center center no-repeat;}
+.sidebar h4 {color:rgb(87, 168, 62);}
+.nav-tabs>.active>a,.nav-tabs>.active>a:hover {color: rgb(87, 168, 62) !important;}
+blockquote {border-left:5px solid rgb(87, 168, 62);}
+#skill i {background:rgb(87, 168, 62);}
+.service-fancybox:hover i {color:rgb(87, 168, 62);}
+.service-fancybox:hover {background:rgb(87, 168, 62);}
+.service-fancybox.featured {	background:rgb(87, 168, 62);}
+.service-fancybox.featured .circleicon i {color:rgb(87, 168, 62);}
+.service-fancybox.black .circleicon i {color:rgb(87, 168, 62);}
+.cbp_tmtimeline>li .cbp_tmicon {background:rgb(87, 168, 62);}
+.services i {	color:rgb(87, 168, 62);}
+.pagination>.active>a,.pagination>.active>span,.pagination>.active>a:hover,.pagination>.active>span:hover,.pagination>.active>a:focus,.pagination>.active>span:focus {background-color:rgb(87, 168, 62);	border-color:rgb(87, 168, 62);}
+.landingpage-button {color:rgb(87, 168, 62);}
+.landingpage-button {color:rgb(87, 168, 62);}
+.landingpage-button span {color:rgb(87, 168, 62);}
+.landingpage-button strong {color:rgb(87, 168, 62);}
+.landingpage-button i {color:rgb(87, 168, 62);}
+.active-header {	background:rgb(87, 168, 62);}
+.active-header:hover {background:rgb(87, 168, 62);}
+#filter ul li .selected {background: rgb(87, 168, 62) !Important;}
+.drop-cap, .captionicons {background:rgb(87, 168, 62);}
+/*.pageheader-default .semitransparentbg, .bgarea-semitransparent {background: rgb(87, 168, 62) !important;}*/

@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Our Common Future - Classes</title>
+<!-- Style -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<!-- Responsive -->
+<link href="css/responsive.css" rel="stylesheet">
+<!-- Choose Layout -->
+<link href="css/layout-wide.css" rel="stylesheet">
+<!-- Choose Skin -->
+<link href="css/skin-green.css" rel="stylesheet">
+<link rel="shortcut icon" href="favicon.ico">
+<!-- Demo -->
+<link rel="stylesheet" id="main-color" href="css/skin-green.css" media="screen"/>
+<link href='//fonts.googleapis.com/css?family=Asap:400,500,600,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<!-- Favicon -->
+<!-- <link rel="shortcut icon" href="img/favicon.ico"> -->
+<!-- IE -->
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>	   
+    <![endif]-->
+<!--[if lte IE 8]>
+	<link href="css/ie8.css" rel="stylesheet">
+	 <![endif]-->
+</head>
+<body class="off">
+<!-- /.wrapbox start-->
+<div class="wrapbox">
+	<!-- NAV
+================================================== -->
+    <nav class="navbar navbar-fixed-top wowmenu" role="navigation">
+        <div class="container">
+
+            <div class="navbar-header">
+                <!-- <a class="navbar-brand logo-nav" href="index.html"><img src="img/logo.png" alt="logo"></a> -->
+                <a class="navbar-brand logo-nav" href="index.php"><img src="img/ocf_logo.png" style="width:77px;"></a>
+            </div>
+            <ul id="nav" class="nav navbar-nav pull-right">
+                <li class="" href="#"><a href="index.php">HOME</a></li>
+                <li class="" href="#"><a href="about.php">ABOUT</a></li>
+
+                <li class="dropdown">
+                <a href="classes.php" class="" >CLASSES</a>
+                <!-- <ul class="dropdown-menu">
+                    <li><a href="home2.html">Home Alt</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="timeline.html">Timeline</a></li>
+                    <li><a href="landingpage.html">Landing Page</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="faq.html">F.A.Q.</a></li>
+                    <li><a href="404.html">404 Not Found</a></li>
+                </ul> -->
+                </li>
+                <li class="dropdown">
+                <a href="../projects/" target="_blank" class="">PROJECTS</a>
+                <!-- <ul class="dropdown-menu">
+                    <li><a href="portfolio3.html">Three Columns</a></li>
+                    <li><a href="portfolio2.html">Two Columns</a></li>
+                    <li><a href="portfolio4.html">Four Columns</a></li>
+                    <li><a href="projectdetail.html">Single Project</a></li>
+                </ul> -->
+                </li>
+                <li class="">
+                <a href="blog.php">BLOG</a>
+                <ul class="#">
+                    <!-- <li><a href="blogindex.html">Home Blog</a></li>
+                    <li><a href="blogsinglepost.html">Single Post</a></li> -->
+                </ul>
+                </li>
+                <li class="">
+                    <a href="impact.php" class="#">YOUR IMPACT</a>
+                </li> 
+                <li><a href="contact.php">CONTACT</a></li>
+
+                <?php if($_SESSION["uid"]==""){?>                  
+                    <li><a href="/login_page.php">LOGIN</a></li>
+                <?php } else {?>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span style="color:#DB420E; padding-top:10px; font-size:11px; font-weight:bold"><?php echo ($_SESSION["name"]);?></span> <i class="icon-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                      <!-- <a ><i class="icon-user"></i> </a> -->
+                        <li>
+                          <a href = "projects/editProfile.php"><i class="icon-refresh" style="margin-right:5px;"></i> Edit Profile </a>
+                        </li>
+                        <li>
+                          <a href="logout.php"><i class="icon-off" style="margin-right:5px;"></i> Logout </a>
+                        </li>
+                      </ul>
+                    </li>
+                <?php }?>      
+
+                <div id="facebookLike" class="pull-right" style="margin-left: 13px;
+        margin-top: 5px;">
+                <div class="fb-like" data-href="https://www.facebook.com/ocfuture" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+            </div>
+
+
+            </ul>		
+        </div>	
+	</nav>
+    
+<!-- /nav end-->
+
+
+	
+	<!-- /.wrapsemibox start-->
+	<div class="wrapsemibox">
+		<div class="semiboxshadow text-center">
+			<img src="img/shp.png" class="img-responsive" alt="">
+		</div>
+		<!-- INTRO NOTE
+================================================== -->
+		<section class="grayarea" id="aboutOCF" >
+		<div class="container">
+			<div class="row">
+				<div id="how"class="col-md-12 text-center">
+					<h1>Our Classes</h1>
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="container" id="note">
+			<div class="row">
+				
+
+				<!-- International Politics COURSE SECTION -->
+				<div class="col-md-4  animated  notransition">
+					<div class="info-box shadow-large bottom0">
+					<div class="info-box-inner">
+						<div class="info-content">
+							<h2>Contemporary Issues in International Politics and Human Rights</h2>
+							<br><br>
+							<div class="col-md-4" id="logistics">
+								<i class="fontawesome-icon medium circle-white center icon-calendar" id="icon_circle"></i>
+								<p>
+									<span style="font-size:17px; color:black;  ">January 5th – February 9th 2015 <p style="font-size:10px; padding-top:13px;">Requires a commitment of 3-6 hours weekly from participating students.</p></span><br>
+									
+								</p>
+							</div>
+
+							<div class="col-md-4" id="logistics">
+
+								<i class="fontawesome-icon medium circle-white center icon-map-marker" id="icon_circle"></i>
+								<p>
+									<span style="font-size:17px; color:black; ">Provided in three locations.<p style="font-size:13px; padding-top:10px;">Europe, Middle East &amp; Africa (EMEA), Asia &amp; the Pacific, The Americas &amp; the Caribbean</p></span><br>
+									
+								</p>
+
+
+
+							</div>
+							
+							<div class="col-md-4" id="logistics">
+
+								<i class="fontawesome-icon medium circle-white center icon-money" id="icon_circle"></i>
+								<p>
+									<span style="font-size:15px;color:black;  ">&pound; 30</span><br>
+									
+								</p>
+
+							</div>
+							
+						<br><br>
+						<div class="clearfix" >
+							<a style="margin-top:20px;" class="btn btn-success btn-lg" href="#"> Apply Now!</a>
+						</div>
+												
+
+					</div>
+				</div>
+
+
+				</div>
+
+					
+				</div>
+
+				<!-- SOCIAL Entrepreneurship COURSE SECTION -->
+
+				<div class="col-md-4  animated  notransition">
+					<div class="info-box shadow-large bottom0">
+					<div class="info-box-inner">
+						<div class="info-content">
+							<h2>Social Entrepreneurship - Innovative Solutions to Social Problems</h2>
+							<br><br>
+							<div class="col-md-4" id="logistics">
+								<i class="fontawesome-icon medium circle-white center icon-calendar" id="icon_circle"></i>
+								<p>
+									<span style="font-size:17px;color:black;  ">January 5th – February 9th 2015 <br><p style="font-size:13px; padding-top:10px;">Requires a commitment of 3-6 hours weekly from participating students.</p></span><br>
+									
+								</p>
+							</div>
+
+							<div class="col-md-4" id="logistics">
+
+								<i class="fontawesome-icon medium circle-white center icon-map-marker" id="icon_circle"></i>
+								<p>
+									<span style="font-size:17px;color:black;  ">Provided in three locations.<br><p style="font-size:13px;padding-top:10px;">Europe, Middle East &amp; Africa (EMEA), Asia &amp; the Pacific, The Americas &amp; the Caribbean</p></span><br>
+									
+								</p>
+
+
+
+							</div>
+							
+							<div class="col-md-4" id="logistics">
+
+								<i class="fontawesome-icon medium circle-white center icon-money" id="icon_circle"></i>
+								<p>
+									<span style="font-size:15px; color:black;  ">&pound; 30</span><br>
+									
+								</p>
+
+							</div>
+							
+						<br><br>
+						<div class="clearfix" >
+							<a style="margin-top:20px;" class="btn btn-success btn-lg" href="#"> Apply Now!</a>
+						</div>
+												
+
+					</div>
+				</div>
+
+
+				</div>
+
+					
+				</div>
+				
+
+				<!-- SUSTAINABILITY COURSE SECTION -->
+				<div class="col-md-4 animated  notransition">
+					<div class="info-box shadow-large bottom0">
+					<div class="info-box-inner">
+						<div class="info-content">
+							<h2>Sustainable Development</h2>
+							<br><br>
+							<div class="col-md-4" id="logistics">
+								<i class="fontawesome-icon medium circle-white center icon-calendar" id="icon_circle"></i>
+								<p>
+									<span style="font-size:17px;color:black;  ">January 5th – February 9th 2015 <br><p style="font-size:13px; padding-top:10px;">Requires a commitment of 3-6 hours weekly from participating students.</p></span><br>
+									
+								</p>
+							</div>
+
+							<div class="col-md-4" id="logistics">
+
+								<i class="fontawesome-icon medium circle-white center icon-map-marker" id="icon_circle"></i>
+								<p>
+									<span style="font-size:17px;color:black;  ">Provided in three locations.<br><p style="font-size:13px;padding-top:10px;">Europe, Middle East &amp; Africa (EMEA), Asia &amp; the Pacific, The Americas &amp; the Caribbean</p></span><br>
+									
+								</p>
+
+
+
+							</div>
+							
+							<div class="col-md-4" id="logistics">
+
+								<i class="fontawesome-icon medium circle-white center icon-money" id="icon_circle"></i>
+								<p>
+									<span style="font-size:15px; color:black;  ">&pound; 30</span><br>
+									
+								</p>
+
+							</div>
+							
+						<br><br>
+						<div class="clearfix" >
+							<a style="margin-top:20px;" class="btn btn-success btn-lg" href="#"> Apply Now!</a>
+						</div>
+												
+
+					</div>
+				</div>
+
+
+				</div>
+
+					
+				</div>
+
+			</div>
+		</div>
+		</section>
+
+
+
+	<!-- BEGIN FOOTER
+================================================== -->
+    <section>
+        <div class="footer">
+            <div class="container animated fadeInUpNow notransition">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h1 class="title"><span class="colortext">A</span>bout </h1>
+                        <p>
+                             OurCommonFuture (OCF) is the future of online education: a virtual immersion program (VIP) for high school students focused on global sustainability issues
+                        </p>
+                        <p>
+                             Made with &nbsp;<i class="icon-heart"></i>&nbsp; by Our Common Future &copy; Copyright 2014.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <h1 class="title"><span class="colortext">S</span>tudents' </h1>
+                        <div id="quotes">
+                            <div class="textItem">
+                                <div class="avatar">
+                                    <img src="img/avatar.jpg" alt="avatar">
+                                </div>
+                                 "What stands out the most to me is the amazing lectures we had and our discussions. What I found interesting was the fact that everyone had something different to say and we could really learn from one another”<span style="font-family:arial;">"</span><br/><p style="padding-top:10px;"><b> Carola, Italy </b></p>
+                            </div>
+                            <div class="textItem">
+                                <div class="avatar">
+                                    <img src="img/avatar.jpg" alt="avatar">
+                                </div>
+                                 "I enjoyed meeting the other people who took the course and the fact that Online UWC managed to find great minds to interact with while being at home. I loved hearing about other places. The level of engagement we had with each other was much higher than other online courses I have taken<span style="font-family:arial;">"</span><br/><p style="padding-top:10px;"><b>Zawer, Syria </b></p>
+                            </div>
+                        </div>
+                        <div class="clearfix">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h1 class="title"><span class="colortext">C</span>onnect </h1>
+                        <div class="footermap">
+                            <p>
+                                <strong>www.ocf.co</strong> 
+                            </p>
+
+
+                            <p>
+                                <strong>ourcommonfuture </strong> 
+                            </p>
+                            <p><br></p>
+                            <ul class="social-icons list-soc">
+                                <li><a href="https://www.facebook.com/ocfuture" target="_blank"><i class="icon-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/OurCommonFutur" target="_blank"><i class="icon-twitter"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="icon-linkedin"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="icon-google-plus"></i></a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- <div class="col-md-3">
+                        <h1 class="title"><span class="colortext">Q</span>uick <span class="font100">Message</span></h1>
+                        <div class="done">
+                            <div class="alert alert-success">
+                                <button type="button" class="close" data-dismiss="alert">×</button>
+                                Your message has been sent. Thank you!
+                            </div>
+                        </div>
+                        <form method="post" action="http://www.wowthemes.net/demo/calypso/contact.php" id="contactform">
+                            <div class="form">
+                                <input class="col-md-6" type="text" name="name" placeholder="Name">
+                                <input class="col-md-6" type="text" name="email" placeholder="E-mail">
+                                <textarea class="col-md-12" name="comment" rows="4" placeholder="Message"></textarea>
+                                <input type="submit" id="submit" class="btn" value="Send">
+                            </div>
+                        </form>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <p id="back-top">
+            <a href="#top"><span></span></a>
+        </p>
+
+    </section>
+	<!-- /footer section end-->
+</div>
+<!-- /.wrapbox ends-->
+<!-- SCRIPTS, placed at the end of the document so the pages load faster
+================================================== -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/common.js"></script>
+<script>
+	/* ---------------------------------------------------------------------- */
+	/*	Carousel
+	/* ---------------------------------------------------------------------- */
+	$(window).load(function(){			
+		$('#carousel-projects').carouFredSel({
+		responsive: true,
+		items       : {
+        width       : 200,
+        height      : 295,
+        visible     : {
+            min         : 1,
+            max         : 4
+        }
+    },
+		width: '200px',
+		height: '295px',
+		auto: true,
+		circular	: true,
+		infinite	: false,
+		prev : {
+			button		: "#car_prev",
+			key			: "left",
+				},
+		next : {
+			button		: "#car_next",
+			key			: "right",
+					},
+		swipe: {
+			onMouse: true,
+			onTouch: true
+			},
+		scroll: {
+        easing: "",
+        duration: 200
+    }
+	});
+		});
+</script>
+<script>
+	//CALL TESTIMONIAL ROTATOR
+	$( function() {
+		/*
+		- how to call the plugin:
+		$( selector ).cbpQTRotator( [options] );
+		- options:
+		{
+			// default transition speed (ms)
+			speed : 700,
+			// default transition easing
+			easing : 'ease',
+			// rotator interval (ms)
+			interval : 8000
+		}
+		- destroy:
+		$( selector ).cbpQTRotator( 'destroy' );
+		*/
+		$( '#cbp-qtrotator' ).cbpQTRotator();
+	} );
+</script>
+<script>
+	//CALL PRETTY PHOTO
+	$(document).ready(function(){
+		$("a[data-gal^='prettyPhoto']").prettyPhoto({social_tools:'', animation_speed: 'normal' , theme: 'dark_rounded'});
+	});
+</script>
+<script>
+	//MASONRY
+	$(document).ready(function(){
+	var $container = $('#content');
+	  $container.imagesLoaded( function(){
+		$container.isotope({
+		filter: '*',	
+		animationOptions: {
+		 duration: 750,
+		 easing: 'linear',
+		 queue: false,	 
+	   }
+	});
+	});
+	$('#filter a').click(function (event) {
+		$('a.selected').removeClass('selected');
+		var $this = $(this);
+		$this.addClass('selected');
+		var selector = $this.attr('data-filter');
+		$container.isotope({
+			 filter: selector
+		});
+		return false;
+	});
+	});
+</script>
+<script>
+//ROLL ON HOVER
+	$(function() {
+	$(".roll").css("opacity","0");
+	$(".roll").hover(function () {
+	$(this).stop().animate({
+	opacity: .8
+	}, "slow");
+	},
+	function () {
+	$(this).stop().animate({
+	opacity: 0
+	}, "slow");
+	});
+	});
+</script>
+<!--BEGIN DEMO PANEL
+================================================== -->
+
+
+<!--END DEMO PANEL
+================================================== -->
+</body>
+</html>

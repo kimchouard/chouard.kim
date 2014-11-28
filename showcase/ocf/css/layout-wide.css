@@ -1,0 +1,14 @@
+.semiboxshadow {
+display: none;}
+.wrapsemibox {
+max-width: 100%;
+box-shadow: none;
+border-bottom: 0;
+}
+.projectdetail .carousel-inner>.item>img, .projectdetail .carousel-inner>.item>a>img {
+display: block;
+max-width: 100%;
+height: auto;
+line-height: 1;
+width: 100%;
+}
