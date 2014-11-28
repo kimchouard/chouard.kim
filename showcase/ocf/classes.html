@@ -1,36 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
-<meta name="author" content="">
-<title>Our Common Future - Classes</title>
-<!-- Style -->
-<link href="css/bootstrap.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
-<!-- Responsive -->
-<link href="css/responsive.css" rel="stylesheet">
-<!-- Choose Layout -->
-<link href="css/layout-wide.css" rel="stylesheet">
-<!-- Choose Skin -->
-<link href="css/skin-green.css" rel="stylesheet">
-<link rel="shortcut icon" href="favicon.ico">
-<!-- Demo -->
-<link rel="stylesheet" id="main-color" href="css/skin-green.css" media="screen"/>
-<link href='//fonts.googleapis.com/css?family=Asap:400,500,600,700,400italic,700italic' rel='stylesheet' type='text/css'>
-<!-- Favicon -->
-<!-- <link rel="shortcut icon" href="img/favicon.ico"> -->
-<!-- IE -->
-<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-      <script src="js/respond.min.js"></script>	   
-    <![endif]-->
-<!--[if lte IE 8]>
-	<link href="css/ie8.css" rel="stylesheet">
-	 <![endif]-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Our Common Future - Classes</title>
+    <!-- Style -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Responsive -->
+    <link href="css/responsive.css" rel="stylesheet">
+    <!-- Choose Layout -->
+    <link href="css/layout-wide.css" rel="stylesheet">
+    <!-- Choose Skin -->
+    <link href="css/skin-green.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- Demo -->
+    <link rel="stylesheet" id="main-color" href="css/skin-green.css" media="screen"/>
+    <link href='//fonts.googleapis.com/css?family=Asap:400,500,600,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    
+    <link href="css/classes.css" rel="stylesheet">
+    <!-- Favicon -->
+    <!-- <link rel="shortcut icon" href="img/favicon.ico"> -->
+    <!-- IE -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+          <script src="js/html5shiv.js"></script>
+          <script src="js/respond.min.js"></script>	   
+        <![endif]-->
+    <!--[if lte IE 8]>
+        <link href="css/ie8.css" rel="stylesheet">
+         <![endif]-->
 </head>
 <body class="off">
 <!-- /.wrapbox start-->
@@ -80,29 +82,9 @@
                 <li class="">
                     <a href="impact.php" class="#">YOUR IMPACT</a>
                 </li> 
-                <li><a href="contact.php">CONTACT</a></li>
-
-                <?php if($_SESSION["uid"]==""){?>                  
-                    <li><a href="/login_page.php">LOGIN</a></li>
-                <?php } else {?>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span style="color:#DB420E; padding-top:10px; font-size:11px; font-weight:bold"><?php echo ($_SESSION["name"]);?></span> <i class="icon-angle-down"></i></a>
-                        <ul class="dropdown-menu">
-                      <!-- <a ><i class="icon-user"></i> </a> -->
-                        <li>
-                          <a href = "projects/editProfile.php"><i class="icon-refresh" style="margin-right:5px;"></i> Edit Profile </a>
-                        </li>
-                        <li>
-                          <a href="logout.php"><i class="icon-off" style="margin-right:5px;"></i> Logout </a>
-                        </li>
-                      </ul>
-                    </li>
-                <?php }?>      
-
-                <div id="facebookLike" class="pull-right" style="margin-left: 13px;
-        margin-top: 5px;">
-                <div class="fb-like" data-href="https://www.facebook.com/ocfuture" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
-            </div>
+                <li><a href="contact.php">CONTACT</a></li>               
+                
+                <li><a href="/login_page.php">LOGIN</a></li>
 
 
             </ul>		
@@ -125,173 +107,78 @@
 			<div class="row">
 				<div id="how"class="col-md-12 text-center">
 					<h1>Our Classes</h1>
-					
 				</div>
 			</div>
 		</div>
 		
 		<div class="container" id="note">
 			<div class="row">
-				
 
 				<!-- International Politics COURSE SECTION -->
-				<div class="col-md-4  animated  notransition">
-					<div class="info-box shadow-large bottom0">
-					<div class="info-box-inner">
-						<div class="info-content">
-							<h2>Contemporary Issues in International Politics and Human Rights</h2>
-							<br><br>
-							<div class="col-md-4" id="logistics">
-								<i class="fontawesome-icon medium circle-white center icon-calendar" id="icon_circle"></i>
-								<p>
-									<span style="font-size:17px; color:black;  ">January 5th – February 9th 2015 <p style="font-size:10px; padding-top:13px;">Requires a commitment of 3-6 hours weekly from participating students.</p></span><br>
-									
-								</p>
-							</div>
+				<div class="col-sm-4 animated notransition">
+					<div class="info-box shadow-large bottom0 wrap-courses">
+                        <div class="info-box-inner">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <img class="course-img-mini" src="img/pol.jpg" alt="Contemporary Issues in International Politics and Human Rights"/>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="info-content">
+                                        <h2 class="class-title">Contemporary Issues in International Politics and Human Rights</h2>
 
-							<div class="col-md-4" id="logistics">
-
-								<i class="fontawesome-icon medium circle-white center icon-map-marker" id="icon_circle"></i>
-								<p>
-									<span style="font-size:17px; color:black; ">Provided in three locations.<p style="font-size:13px; padding-top:10px;">Europe, Middle East &amp; Africa (EMEA), Asia &amp; the Pacific, The Americas &amp; the Caribbean</p></span><br>
-									
-								</p>
-
-
-
-							</div>
-							
-							<div class="col-md-4" id="logistics">
-
-								<i class="fontawesome-icon medium circle-white center icon-money" id="icon_circle"></i>
-								<p>
-									<span style="font-size:15px;color:black;  ">&pound; 30</span><br>
-									
-								</p>
-
-							</div>
-							
-						<br><br>
-						<div class="clearfix" >
-							<a style="margin-top:20px;" class="btn btn-success btn-lg" href="#"> Apply Now!</a>
-						</div>
-												
-
-					</div>
-				</div>
-
-
-				</div>
-
-					
+                                        <div class="clearfix" >
+                                            <a class="btn btn-success btn-lg" href="#">Learn more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+				    </div>
 				</div>
 
 				<!-- SOCIAL Entrepreneurship COURSE SECTION -->
+				<div class="col-sm-4 animated notransition">
+					<div class="info-box shadow-large bottom0 wrap-courses">
+                        <div class="info-box-inner">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <img class="course-img-mini" src="img/soc.jpg" alt="Social Entrepreneurship - Innovative Solutions to Social Problems"/>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="info-content">
+                                        <h2 class="class-title">Social Entrepreneurship - Innovative Solutions to Social Problems</h2>
 
-				<div class="col-md-4  animated  notransition">
-					<div class="info-box shadow-large bottom0">
-					<div class="info-box-inner">
-						<div class="info-content">
-							<h2>Social Entrepreneurship - Innovative Solutions to Social Problems</h2>
-							<br><br>
-							<div class="col-md-4" id="logistics">
-								<i class="fontawesome-icon medium circle-white center icon-calendar" id="icon_circle"></i>
-								<p>
-									<span style="font-size:17px;color:black;  ">January 5th – February 9th 2015 <br><p style="font-size:13px; padding-top:10px;">Requires a commitment of 3-6 hours weekly from participating students.</p></span><br>
-									
-								</p>
-							</div>
-
-							<div class="col-md-4" id="logistics">
-
-								<i class="fontawesome-icon medium circle-white center icon-map-marker" id="icon_circle"></i>
-								<p>
-									<span style="font-size:17px;color:black;  ">Provided in three locations.<br><p style="font-size:13px;padding-top:10px;">Europe, Middle East &amp; Africa (EMEA), Asia &amp; the Pacific, The Americas &amp; the Caribbean</p></span><br>
-									
-								</p>
-
-
-
-							</div>
-							
-							<div class="col-md-4" id="logistics">
-
-								<i class="fontawesome-icon medium circle-white center icon-money" id="icon_circle"></i>
-								<p>
-									<span style="font-size:15px; color:black;  ">&pound; 30</span><br>
-									
-								</p>
-
-							</div>
-							
-						<br><br>
-						<div class="clearfix" >
-							<a style="margin-top:20px;" class="btn btn-success btn-lg" href="#"> Apply Now!</a>
-						</div>
-												
-
-					</div>
+                                        <div class="clearfix" >
+                                            <a class="btn btn-success btn-lg" href="#">Learn more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+				    </div>
 				</div>
-
-
-				</div>
-
-					
-				</div>
-				
 
 				<!-- SUSTAINABILITY COURSE SECTION -->
-				<div class="col-md-4 animated  notransition">
-					<div class="info-box shadow-large bottom0">
-					<div class="info-box-inner">
-						<div class="info-content">
-							<h2>Sustainable Development</h2>
-							<br><br>
-							<div class="col-md-4" id="logistics">
-								<i class="fontawesome-icon medium circle-white center icon-calendar" id="icon_circle"></i>
-								<p>
-									<span style="font-size:17px;color:black;  ">January 5th – February 9th 2015 <br><p style="font-size:13px; padding-top:10px;">Requires a commitment of 3-6 hours weekly from participating students.</p></span><br>
-									
-								</p>
-							</div>
+				<div class="col-sm-4 animated notransition">
+					<div class="info-box shadow-large bottom0 wrap-courses">
+                        <div class="info-box-inner">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <img class="course-img-mini" src="img/sus.jpg" alt="Sustainable Development"/>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="info-content">
+                                        <h2 class="class-title">Sustainable Development</h2>
 
-							<div class="col-md-4" id="logistics">
-
-								<i class="fontawesome-icon medium circle-white center icon-map-marker" id="icon_circle"></i>
-								<p>
-									<span style="font-size:17px;color:black;  ">Provided in three locations.<br><p style="font-size:13px;padding-top:10px;">Europe, Middle East &amp; Africa (EMEA), Asia &amp; the Pacific, The Americas &amp; the Caribbean</p></span><br>
-									
-								</p>
-
-
-
-							</div>
-							
-							<div class="col-md-4" id="logistics">
-
-								<i class="fontawesome-icon medium circle-white center icon-money" id="icon_circle"></i>
-								<p>
-									<span style="font-size:15px; color:black;  ">&pound; 30</span><br>
-									
-								</p>
-
-							</div>
-							
-						<br><br>
-						<div class="clearfix" >
-							<a style="margin-top:20px;" class="btn btn-success btn-lg" href="#"> Apply Now!</a>
-						</div>
-												
-
-					</div>
+                                        <div class="clearfix" >
+                                            <a class="btn btn-success btn-lg" href="#">Learn more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+				    </div>
 				</div>
-
-
-				</div>
-
-					
-				</div>
-
 			</div>
 		</div>
 		</section>

@@ -1,0 +1,18 @@
+h2.class-title {
+    text-align: left;
+    font-size: 20px;
+}
+
+.course-img-mini {
+    width: 100%;
+}
+
+
+.info-box.wrap-courses {
+    max-width: 350px;
+    margin: 0 auto 15px;
+}
+
+.info-box.wrap-courses .info-box-inner {
+    padding: 15px 0px !important;
+}
