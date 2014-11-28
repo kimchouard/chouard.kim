@@ -57,5 +57,28 @@ h4.fil-ariane {
 
 a.pay-btn {
     display: inline-block;
-    margin-left: 15px;
+    margin: 10px 0 0 15px;
+}
+
+a.apply-btn {
+    margin: 10px 0 0 0px;
+}
+
+.course-log {
+    padding-left: 15px;
+    border-left: 1px solid #eee;
+}
+
+h3.log-name {
+    font-size: 20px;
+    color: #777;
+}
+
+h3.log-name i {
+    color: rgb(87, 168, 62);
+    margin: 0 20px 0 0;
+}
+
+ul.details {
+    margin-left: 30px;
 }
