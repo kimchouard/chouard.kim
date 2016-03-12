@@ -7,8 +7,8 @@ body { background: url('../img/bg.jpg'); font-family: 'Cantarell', sans-serif; f
 /* Style généraux */
 h1, h2, h3 { font-weight: normal; }
 h1, h2 { text-align: center; margin: 0; }
-h1 { font-size: 95px; }
-h2 { font-size: 50px; border-bottom: 3px solid #1B1B1B; border-top: 3px solid #1B1B1B; position: relative; top: -15px; }
+h1 { font-size: 80px; }
+h2 { font-size: 20px; border-bottom: 3px solid #1B1B1B; border-top: 3px solid #1B1B1B; position: relative; top: -15px; }
 h3 { font-size: 18px; font-family: Arial, sans-serif; font-style: italic;}
 .center { text-align: center; }
 a { text-decoration: none; color: #1B1B1B; }
@@ -23,7 +23,7 @@ svg { fill: #1B1B1B; }
 /* Contact */
 #wrapContact { height: 80px; border-bottom: 3px solid #1B1B1B; }
 #contact { height: 80px; width: 650px; margin: 0 auto; overflow: hidden; }
-.item { display: block; height: 80px; padding: 0 25px; position: relative; top: 50px; float: left; }
+.item { display: block; height: 80px; padding: 0 25px; position: relative; top: 50px; float: left; cursor: pointer; }
 .item img { width: 45px; }
 #resume { padding: 0 20px; }
 #linkedin { padding-left: 20px; }

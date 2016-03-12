@@ -19,14 +19,14 @@ function ouvrirBulle(ratioB, timing, speed, fonctionFin) {
 	$('#wrapTexte').stop().animate({width: $('#main').width(), height: taille, 'padding-top': (taille)/2, 'padding-left': padding, 'padding-right': padding, top: ($(window).height()-(taille*1.5))/2, left: ($(window).width()-(taille*1.5))/2}, timing, function() {
 		//Affichage de la citation
 		if (fonctionFin) {
-			$('#pli').stop().animate({left:-20, top: 59}, 200*speed, function() {
-				$('#pli').stop().animate({left: 295, top: -100}, 1100*speed);
-				$('#wrapCitation').stop().animate({left: 0, top: 0}, 1000*speed);
-				$('#citation').stop().animate({left: 0}, 1000*speed, function() {
-					//Animation de fin de chargement
-					animerIcones(30, 50);
-				});
-			});
+			// $('#pli').stop().animate({left:-20, top: 59}, 200*speed, function() {
+			// 	$('#pli').stop().animate({left: 295, top: -100}, 1100*speed);
+			// 	$('#wrapCitation').stop().animate({left: 0, top: 0}, 1000*speed);
+			// 	$('#citation').stop().animate({left: 0}, 1000*speed, function() {
+			// 		//Animation de fin de chargement
+			// 		animerIcones(30, 50);
+			// 	});
+			// });
 		};
 	});
 };
