@@ -261,7 +261,7 @@ h3 {
   /* Contenu principal */
 
   #wrapTexte {
-    padding-top: 10%;
+    padding-top: 18%;
     height: 120%;
   }
 
@@ -275,6 +275,14 @@ h3 {
   }
 
   /* Style g�n�raux */
+  h1 {
+    font-size: 70px;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+
   h1, h2 {
     text-align: left;
     margin: 0 0 10px 30px;
@@ -308,7 +316,7 @@ h3 {
   /* Contacts */
   
   .contacts {
-    margin-top: 20%;
+    margin-top: 30%;
   }
 
   /* Header */
