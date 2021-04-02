@@ -112,11 +112,24 @@
     </div>
 
 
-    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
-    <script type="text/javascript" src="js/jquery.hoverIntent.minified.js"></script>
-    <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
-    <script type="text/javascript" src="js/jquery.path.js"></script>
-    <script type="text/javascript" src="js/anim.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(() => {
+            // //Au survol des icones.
+            $('.item').each(function() {
+                $(this).hover(() => {
+                    hover = true;
+                    text = $(this).attr('alt');
+                    $(`#${ $(this).parent().parent().attr('id') } .details`).html(text).fadeIn();
+                    // $(this).animate({top: '0px'}, 200);
+                }, () => {
+                    hover = false;
+                    // $(this).animate({top: '15px'}, 100);
+                    $(`#${ $(this).parent().parent().attr('id') } .details`).html(($(this).parent().parent().attr('id') === 'wrapSDG') ? 'SDG Advocacy & Education' : 'Creativity');
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
