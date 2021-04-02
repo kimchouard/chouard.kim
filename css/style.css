@@ -15,6 +15,21 @@ body {
 
 /* Contenu principal */
 
+@keyframes bubble-open-responsive {
+  0% { 
+    left: 50%;
+    top: 50%;
+    width: 0;
+    height: 0;
+  }
+  100% { 
+    height: 700px;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+
 @keyframes bubble-open {
   0% { 
     left: 50%;
@@ -36,8 +51,8 @@ body {
   height: 700px;
   width: 100%;
   padding: 20% 0 0;
-  animation: bubble-open 500ms 1 ease-in-out;
-  -webkit-animation: bubble-open 500ms 1 ease-in-out;
+  animation: bubble-open-responsive 500ms 1 ease-in-out;
+  -webkit-animation: bubble-open-responsive 500ms 1 ease-in-out;
   top: 0;
   left: 0;
   /* border: 14px solid #1B1B1B; */
@@ -214,8 +229,13 @@ svg {
 }
 
 #wrapCreativity .item:nth-child(2) {
-  animation-delay: 0.4s;
-  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+}
+
+#wrapCreativity .item:nth-child(3) {
+  animation-delay: 0.6s;
+  -webkit-animation-delay: 0.6s;
 }
 
 @keyframes bounce {
@@ -322,6 +342,8 @@ h3 {
   #wrapTexte {
     padding-top: 18%;
     height: 120%;
+    animation: bubble-open 500ms 1 ease-in-out;
+    -webkit-animation: bubble-open 500ms 1 ease-in-out;
   }
 
   #wrapTexte:before {
@@ -374,6 +396,10 @@ h3 {
     height: 60px;
     float: left;
     clear: none;
+  }
+
+  .item-responsive {
+    display: none;
   }
 
   /* Contacts */
