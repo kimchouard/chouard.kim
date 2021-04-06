@@ -167,7 +167,7 @@ svg {
 /* Menus */
 
 .wrap {
-  height: 60px;
+  height: 80px;
   border-bottom: 3px solid #1B1B1B;
   width: 325px;
   margin: 0 auto 15px;
@@ -181,7 +181,7 @@ svg {
 }
 
 .menu {
-  height: 60px;
+  height: 80px;
   margin: 0 auto;
   overflow: hidden;
   float: left;
@@ -196,7 +196,7 @@ svg {
   height: 90px;
   padding: 0 23px;
   position: relative;
-  top: 15px;
+  top: 35px;
   float: left;
   cursor: pointer;
   transition: top 300ms;
@@ -239,15 +239,15 @@ svg {
 }
 
 @keyframes bounce {
-  0% { top: 15px; }
-  45% { top: 15px; }
-  48% { top: 0px; }
-  51% { top: 15px; }
-  100% { top: 15px; }
+  0% { top: 35px; }
+  45% { top: 35px; }
+  48% { top: 20px; }
+  51% { top: 35px; }
+  100% { top: 35px; }
 }
 
 .item:hover {
-  margin-top: -10px;
+  margin-top: -7px;
 }
 
 .item img {
@@ -376,7 +376,7 @@ h3 {
   .wrap {
     /* border-bottom: 3px solid #1B1B1B; */
     /* width: 325px; */
-    margin-top: 20px;
+    /* margin-top: 20px; */
   }
 
   #wrapSDG {
@@ -393,7 +393,7 @@ h3 {
 
   #wrapSeparator {
     width: 26px;
-    height: 60px;
+    height: 80px;
     float: left;
     clear: none;
   }
